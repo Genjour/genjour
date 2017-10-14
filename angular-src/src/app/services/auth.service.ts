@@ -27,6 +27,17 @@ export class AuthService {
     return this.http.post('http://localhost:3000/users/authenticate',user,{headers: headers}).map(res=> res.json());
   }
 
+  //get profile
+
+  getProfile(){
+    let headers = new Headers();
+    this.loadToken();
+    headers.append('Authorization',this.authToken);
+    headers.append('Content-Type','application/json');
+    return this.http.get('http://localhost:3000/users/profile',{headers: headers}).map(res=> res.json());
+  }
+
+
   //store token
 
   storeUserData(token, user){
@@ -36,6 +47,11 @@ export class AuthService {
     this.user = user;
   }
 
+  loadToken(){
+    const token = localStorage.getItem('id_token');
+    this.authToken= token;
+    this.user = this.user;
+  }
 
   //logout
 
