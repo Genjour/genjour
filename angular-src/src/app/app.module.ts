@@ -37,7 +37,6 @@ const appRoutes: Routes = [
     HomeComponent,
     DashboardComponent,
     ProfileComponent,
-    DashboardComponent,
     UserDashboardComponent
   ],
   imports: [
