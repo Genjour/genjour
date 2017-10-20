@@ -1,7 +1,164 @@
 <div *ngIf="user">
-  <h2 class="display-4">{{user.name}}</h2>
-  <ul>
-    <li class="list-group-item">Username: {{user.username}}</li>
-    <li class="list-group-item">Email: {{user.email}}</li>
+  <div class="row">
+    <div class="col s2">
+      <img src="../../../img/user/avatar.jpg" height="150px" class="responsive-img" alt="">
+    </div>
+
+        <div class="col s6">
+          <h4 class="">{{user.name}}</h4>
+          <div class="row">
+              <a href="#" class="btn waves-effect waves-light" type="submit" name="action">Support</a>
+              <a href="#" class="btn disabled waves-effect waves-light" type="submit" name="action">Supporting</a>
+          </div>
+        </div>
+        <div class="col s2">
+          <span class="new badge blue" data-badge-caption ="14-30"></span>
+          <span class="new badge blue" data-badge-caption ="M"></span>
+        </div>
+        <div class="col s2">
+          <a href="#" class="btn waves-effect waves-light" type="submit" name="action">Your Survey</a>
+        </div>
+
+    </div>
+
+      <div class="row">
+        <div class="col s6 offset-s6">
+          <div class="card-panel teal">
+            <div class="row">
+              <h5 class="center-align white-text">Survey</h5>
+            </div>
+            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+            </span>
+          </div>
+        </div>
+      </div>
+
+<h4>Contribute</h4>
+<hr>
+<div class="row">
+  <ul id="tabs-swipe-demo" class="tabs tab-profile z-depth-1 light-blue">
+    <li class="tab col s4"><a class="white-text waves-effect waves-light" href="#journal"><i class="material-icons">border_color</i> Journal</a></li>
+    <li class="tab col s4"><a class="white-text waves-effect waves-light" href="#quotation"><i class="material-icons">format_quote</i> Quoation</a></li>
+    <li class="tab col s4"><a class="white-text waves-effect waves-light" href="#video"><i class="material-icons">videocam</i> Video</a></li>
   </ul>
+
+  <div id="journal" class="col s12 grey lighten-4">
+    <div class="row">
+      <div class="col s2">
+        <img src="../../../img/user/avatar.jpg" class="responsive circle" alt="" height="50px" >
+      </div>
+      <div class="col s10">
+        <div class="row">
+
+          <div class="input-field col s4">
+            <select>
+             <option value="" disabled selected>Select </option>
+             <option value="1">Society</option>
+             <option value="2">Self Help</option>
+             <option value="3">Controversy</option>
+             <option value="">Politics</option>
+             <option value="">Philosophy</option>
+             <option value="">Economics</option>
+             <option value="">Life</option>
+           </select>
+           <label>Choose category</label>
+          </div>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="journal" class="materialize-textarea"></textarea>
+          <label for="journal">Journal</label>
+        </div>
+        <div class="row right-align">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">chevron_right</i>
+           <input type="text" id="HashTags">
+           <label class="active" for="HashTags">HashTags</label>
+         </div>
+
+          <a class="waves-effect waves-light btn"><i class="material-icons left">send</i>Post</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="quotation" class="col s12 grey lighten-4">
+    <div class="row">
+      <div class="col s2">
+        <img src="../../../img/user/avatar.jpg" class="responsive circle" alt="" height="50px">
+      </div>
+      <div class="col s10">
+        <div class="row">
+          <div class="input-field col s4">
+            <select>
+             <option value="" disabled selected>Select</option>
+             <option value="1">Society</option>
+             <option value="2">Self Help</option>
+             <option value="3">Controversy</option>
+             <option value="">Politics</option>
+             <option value="">Philosophy</option>
+             <option value="">Economics</option>
+             <option value="">Life</option>
+           </select>
+           <label>Choose category</label>
+          </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="textarea1" class="materialize-textarea" data-length="180"></textarea>
+              <label for="textarea1">Quotation </label>
+            </div>
+        </div>
+        <div class="row right-align">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">chevron_right</i>
+           <input type="text" id="HashTags">
+           <label class="active" for="HashTags">HashTags</label>
+         </div>
+          <a class="waves-effect waves-light btn"><i class="material-icons left">send</i>Post</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="video" class="col s12 grey lighten-4">
+    <div class="row">
+      <div class="col s2">
+        <img src="../../../img/user/avatar.jpg" class="responsive circle" alt="" height="50px">
+      </div>
+      <div class="col s10">
+        <div class="row">
+          <div class="input-field col s12">
+            <div class="row">
+              <i class="material-icons prefix">link</i>
+              <input id="video_link" type="text">
+              <label for="video_link">Link</label>
+            </div>
+          </div>
+        </div>
+        <div class="row right-align">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">chevron_right</i>
+           <input type="text" id="HashTags">
+           <label class="active" for="HashTags">HashTags</label>
+         </div>
+          <div class="">
+            <a class="waves-effect waves-light btn"><i class="material-icons left">send</i>Post</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <ul class="collection">
+    <li class="collection-item"><h2>{{user.name}}</h2></li>
+     <li class="collection-item">Username: {{user.username}}</li>
+     <li class="collection-item">Email: {{user.email}}</li>
+   </ul>
 </div>
