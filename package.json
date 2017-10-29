@@ -13,10 +13,12 @@
     "body-parser": "*",
     "cors": "*",
     "express": "*",
-    "jsonwebtoken": "*",
+    "jsonwebtoken": "^7.4.3",
     "mongoose": "*",
     "passport": "*",
-    "passport-jwt": "*"
+    "passport-facebook": "^2.1.1",
+    "passport-jwt": "^2.2.1",
+    "passport-local": "^1.0.0"
   },
   "author": "amit",
   "license": "ISC"
